@@ -1,0 +1,130 @@
+<h3>Lights Out</h3>
+<form name="lightsform">
+<p align="left"><span style="font-size: small;">El siguiente tablero doble sirve para practicar el juego Lights Out.</span></p>
+<p align="left"><span style="font-size: small;">1. Marque en el tablero superior las luces activadas inicialmente.</span></p>
+<p align="left"><span style="font-size: small;">2. Pulse en la barra intermedia para comenzar.</span></p>
+<p align="left"><span style="font-size: small;">3. Puede jugar en el tablero interactivo inferior.</span></p>
+<p align="left"> </p>
+<form name="lightsform">
+<center>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<td><input type="checkbox" name="aa" value="0" /></td>
+<td><input type="checkbox" name="bb" value="0" /></td>
+<td><input type="checkbox" name="cc" value="0" /></td>
+<td><input type="checkbox" name="dd" value="0" /></td>
+</tr>
+<tr>
+<td><input type="checkbox" name="ff" value="0" /></td>
+<td><input type="checkbox" name="gg" value="0" /></td>
+<td><input type="checkbox" name="hh" value="0" /></td>
+<td><input type="checkbox" name="ii" value="0" /></td>
+</tr>
+<tr>
+<td><input type="checkbox" name="kk" value="0" /></td>
+<td><input type="checkbox" name="ll" value="0" /></td>
+<td><input type="checkbox" name="mm" value="0" /></td>
+<td><input type="checkbox" name="nn" value="0" /></td>
+</tr>
+<tr>
+<td><input type="checkbox" name="pp" value="0" /></td>
+<td><input type="checkbox" name="qq" value="0" /></td>
+<td><input type="checkbox" name="rr" value="0" /></td>
+<td><input type="checkbox" name="ss" value="0" /></td>
+</tr>
+</tbody>
+</table>
+<input onclick="form.a.checked=form.aa.checked;
+	form.b.checked=form.bb.checked;
+	form.c.checked=form.cc.checked;
+	form.d.checked=form.dd.checked;
+	form.f.checked=form.ff.checked;
+	form.g.checked=form.gg.checked;
+	form.h.checked=form.hh.checked;
+	form.i.checked=form.ii.checked;
+	form.k.checked=form.kk.checked;
+	form.l.checked=form.ll.checked;
+	form.m.checked=form.mm.checked;
+	form.n.checked=form.nn.checked;
+	form.p.checked=form.pp.checked;
+	form.q.checked=form.qq.checked;
+	form.r.checked=form.rr.checked;
+	form.s.checked=form.ss.checked;
+	" type="button" value="Pulsa para iniciar abajo con las luces arriba marcadas" />
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<td><input onclick="form.b.checked=1-form.b.checked
+form.f.checked=1-form.f.checked;" type="checkbox" name="a" value="form.aa.checked" /></td>
+<td><input onclick="
+form.g.checked=1-form.g.checked
+form.a.checked=1-form.a.checked
+form.c.checked=1-form.c.checked" type="checkbox" name="b" value="0" /></td>
+<td><input onclick="
+form.h.checked=1-form.h.checked
+form.b.checked=1-form.b.checked
+form.d.checked=1-form.d.checked" type="checkbox" name="c" value="0" /></td>
+<td><input onclick="
+form.i.checked=1-form.i.checked
+form.c.checked=1-form.c.checked" type="checkbox" name="d" value="0" /></td>
+</tr>
+<tr>
+<td><input onclick="
+form.a.checked=1-form.a.checked
+form.g.checked=1-form.g.checked
+form.k.checked=1-form.k.checked" type="checkbox" name="f" value="0" /></td>
+<td><input onclick="
+form.l.checked=1-form.l.checked
+form.b.checked=1-form.b.checked
+form.f.checked=1-form.f.checked
+form.h.checked=1-form.h.checked" type="checkbox" name="g" value="0" /></td>
+<td><input onclick="
+form.c.checked=1-form.c.checked
+form.g.checked=1-form.g.checked
+form.i.checked=1-form.i.checked
+form.m.checked=1-form.m.checked" type="checkbox" name="h" value="0" /></td>
+<td><input onclick="form.d.checked=1-form.d.checked
+form.h.checked=1-form.h.checked
+form.n.checked=1-form.n.checked" type="checkbox" name="i" value="0" /></td>
+</tr>
+<tr>
+<td><input onclick="
+form.f.checked=1-form.f.checked
+form.l.checked=1-form.l.checked
+form.p.checked=1-form.p.checked" type="checkbox" name="k" value="0" /></td>
+<td><input onclick="
+form.k.checked=1-form.k.checked
+form.m.checked=1-form.m.checked
+form.g.checked=1-form.g.checked
+form.q.checked=1-form.q.checked" type="checkbox" name="l" value="0" /></td>
+<td><input onclick="
+form.l.checked=1-form.l.checked
+form.r.checked=1-form.r.checked
+form.h.checked=1-form.h.checked
+form.n.checked=1-form.n.checked" type="checkbox" name="m" value="0" /></td>
+<td><input onclick="
+form.s.checked=1-form.s.checked
+form.i.checked=1-form.i.checked
+form.m.checked=1-form.m.checked" type="checkbox" name="n" value="0" /></td>
+</tr>
+<tr>
+<td><input onclick="
+form.q.checked=1-form.q.checked
+form.k.checked=1-form.k.checked" type="checkbox" name="p" value="0" /></td>
+<td><input onclick="
+form.r.checked=1-form.r.checked
+form.l.checked=1-form.l.checked
+form.p.checked=1-form.p.checked" type="checkbox" name="q" value="0" /></td>
+<td><input onclick="
+form.s.checked=1-form.s.checked
+form.m.checked=1-form.m.checked
+form.q.checked=1-form.q.checked" type="checkbox" name="r" value="0" /></td>
+<td><input onclick="
+form.n.checked=1-form.n.checked
+form.r.checked=1-form.r.checked" type="checkbox" name="s" value="0" /></td>
+</tr>
+</tbody>
+</table>
+</center>
+</form>
